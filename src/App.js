@@ -23,6 +23,7 @@ import {
 import Divider from "@mui/material/Divider";
 
 function App() {
+  const [currentTime, setCurrentTime] = useState(new Date());
   const [prayerTimes, setPrayerTimes] = useState({});
   const [city, setCity] = useState("Indramayu");
   const [country, setCountry] = useState("Indonesia");
@@ -70,8 +71,16 @@ function App() {
       }
     }
     fetchData();
-  }, [city, country,API_URL]);
+    // Mengatur interval untuk mengupdate waktu setiap detik
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
 
+    // Membersihkan interval saat komponen di-unmount
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [city, country, API_URL]);
   const fardPrayers = [
     "Fajr", // Shubuh
     "Dhuhr", // Dzuhur
@@ -111,7 +120,7 @@ function App() {
     if (selectedCity) {
       setCity(selectedCity.city);
       setCountry(selectedCity.country);
-      console.log("selected",selectedCity)
+      console.log("selected", selectedCity);
     }
   };
 
@@ -162,7 +171,7 @@ function App() {
           </Box>
           <Box fontWeight="bold" color="#3f51b5">
             Waktu Sekarang :{" "}
-            {new Date().toLocaleTimeString("id-ID", {
+            {currentTime.toLocaleTimeString("id-ID", {
               hour: "2-digit",
               minute: "2-digit",
             })}
