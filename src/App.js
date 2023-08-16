@@ -158,7 +158,7 @@ function App() {
         >
           <Divider className="custom-divider" />
           <Box fontWeight="bold" color="#3f51b5">
-            {currentDate}
+            Tanggal {currentDate}
           </Box>
           <Box fontWeight="bold" color="#3f51b5">
             Waktu Sekarang :{" "}
