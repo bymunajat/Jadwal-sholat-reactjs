@@ -58,7 +58,7 @@ function App() {
     // Tambahkan kota-kota lain sesuai kebutuhan Anda
   ]);
 
-  const API_URL = `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
+  const API_URL = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
 
   useEffect(() => {
     async function fetchData() {
