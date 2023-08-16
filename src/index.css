@@ -7,7 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0; /* Hapus margin bawaan browser */
+  padding: 0; /* Hapus padding bawaan browser */
+  background-image: url("/public/gurun.jpg"); /* Ganti dengan path yang benar */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Memastikan posisi tetap (static) */
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.custom-divider {
+  margin: 10px 0;
+  background-color: #3f51b5; /* Warna garis pemisah */
+  height: 1px; /* Ubah tinggi garis pemisah sesuai keinginan */
 }
