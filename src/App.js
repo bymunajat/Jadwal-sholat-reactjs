@@ -111,6 +111,7 @@ function App() {
     if (selectedCity) {
       setCity(selectedCity.city);
       setCountry(selectedCity.country);
+      console.log("selected",selectedCity)
     }
   };
 
