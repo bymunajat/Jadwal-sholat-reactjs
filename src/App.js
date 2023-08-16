@@ -70,7 +70,7 @@ function App() {
       }
     }
     fetchData();
-  }, [city, country]);
+  }, [city, country,API_URL]);
 
   const fardPrayers = [
     "Fajr", // Shubuh
