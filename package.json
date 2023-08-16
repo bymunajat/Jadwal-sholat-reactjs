@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://jadwal-sholat-reactjs.vercel.app",
   "name": "jadwal-sholat-reactjs",
   "version": "0.1.0",
   "private": true,
