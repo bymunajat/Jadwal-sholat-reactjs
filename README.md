@@ -1,4 +1,3 @@
-Prewiew : https://jadwal-sholat-reactjs.vercel.app
 
 
 ![jadwalsholat](https://github.com/bymunajat/Jadwal-sholat-reactjs/assets/109524506/009df4e2-c4bf-4019-9e80-e51d13f00952)
@@ -19,3 +18,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### Prewiew : https://jadwal-sholat-reactjs.vercel.app
